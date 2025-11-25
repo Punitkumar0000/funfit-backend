@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+         https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <servlet>
+        <servlet-name>BatchServlet</servlet-name>
+        <servlet-class>com.funfit.servlet.BatchServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>BatchServlet</servlet-name>
+        <url-pattern>/batches/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ParticipantServlet</servlet-name>
+        <servlet-class>com.funfit.servlet.ParticipantServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ParticipantServlet</servlet-name>
+        <url-pattern>/participants/*</url-pattern>
+    </servlet-mapping>
+
+</web-app>

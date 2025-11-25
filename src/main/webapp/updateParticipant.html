@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Participant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Update Participant</h2>
+
+    <form action="participants/${participant.id}" method="post">
+        <input type="hidden" name="_method" value="PUT">
+
+        <input value="${participant.id}" disabled>
+        <input name="name" value="${participant.name}" required>
+        <input name="email" value="${participant.email}">
+        <input name="phone" value="${participant.phone}">
+        <input name="batch_id" value="${participant.batchId}">
+        <input name="enrolled_date" value="${participant.enrolledDate}">
+
+        <button type="submit">Update Participant</button>
+    </form>
+
+    <br>
+    <a href="participants">⬅ Back</a>
+</div>
+
+</body>
+</html>
+
+
